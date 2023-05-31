@@ -1,0 +1,19 @@
+/* Write your CSS here */
+.transactionHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-style: solid;
+}
+.transHeadingChild {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.deleteIcon {
+  height: 30px;
+  width: 30px;
+}
