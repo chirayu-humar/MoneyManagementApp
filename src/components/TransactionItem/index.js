@@ -4,7 +4,7 @@ import './index.css'
 const TransactionItem = props => {
   const {details, deleteFunction} = props
   const {title, amount, type, id} = details
-
+  const typeIsIncome = type === 'INCOME'
   const onDeleteBtn = () => {
     deleteFunction(id)
   }
@@ -18,7 +18,8 @@ const TransactionItem = props => {
         <p>{amount}</p>
       </div>
       <div className="transHeadingChild">
-        <p>{type}</p>
+        {typeIsIncome && <p>Income</p>}
+        {!typeIsIncome && <p>Expenses</p>}
       </div>
       <div className="transHeadingChild">
         <div>
