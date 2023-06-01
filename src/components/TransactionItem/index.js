@@ -15,7 +15,7 @@ const TransactionItem = props => {
         <p>{title}</p>
       </div>
       <div className="transHeadingChild">
-        <p>{amount}</p>
+        <p>Rs {amount}</p>
       </div>
       <div className="transHeadingChild">
         {typeIsIncome && <p>Income</p>}
