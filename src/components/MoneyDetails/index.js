@@ -18,7 +18,7 @@ const MoneyDetails = props => {
       </div>
       <div className="mainContainer">
         <p>Your {displayText}</p>
-        <p data-testid={dataTestValue}>{display}</p>
+        <p data-testid={dataTestValue}>Rs {display}</p>
       </div>
     </div>
   )
